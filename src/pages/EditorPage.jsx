@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/EditorPage.module.css';
 
 export default function EditorPage({ note, onNavigate, onSave }) {
@@ -64,8 +64,7 @@ export default function EditorPage({ note, onNavigate, onSave }) {
           content: e.target.innerText
         }))}
         dangerouslySetInnerHTML={{ __html: currentNote.content }}
-      />
-      </div>
+      ></div>
 
       {/* Bottom controls */}
       <div className={styles.bottomControls}>
@@ -77,7 +76,7 @@ export default function EditorPage({ note, onNavigate, onSave }) {
               className={styles.colorOption}
               style={{ backgroundColor: color }}
               onClick={() => handleColorChange(color)}
-            />
+            ></div>
           ))}
         </div>
         <button title="Keyboard Mode">⌨️</button>

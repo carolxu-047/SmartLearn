@@ -1,0 +1,104 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.navControls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  background: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 70%;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.accountMenu button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+}
+
+.categorySidebar {
+  width: 200px;
+  padding: 20px;
+}
+
+.categoryItem {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.fileArea {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px 0 0 0;
+}
+
+.createButton {
+  border: 2px dashed white;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.noteCard {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.noteCard h3 {
+  margin: 0 0 10px 0;
+}
+
+.noteCard p {
+  margin: 0;
+  opacity: 0.8;
+}
